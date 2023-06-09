@@ -1,0 +1,21 @@
+*{
+    background-color:  hsl(30, 38%, 92%);
+    padding: 0;
+    margin: 0;
+
+}   
+
+
+.mainContainer{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+     justify-items: center;
+    /* height: 100px; */
+    /* place-items: center; */
+}
+
+.mainContainer .imageSection img{
+    width: auto;
+    height: 450px;
+}
