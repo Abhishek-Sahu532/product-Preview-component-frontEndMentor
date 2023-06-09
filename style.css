@@ -1,21 +1,108 @@
-*{
+body{
     background-color:  hsl(30, 38%, 92%);
-    padding: 0;
-    margin: 0;
+        /* padding: 0;
+        margin: 0; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        border-radius: 15px;
+        margin-top: 10%;
 
-}   
+
+}
 
 
 .mainContainer{
     display: flex;
-    flex-direction: row; 
-    align-items: center;
-     justify-items: center;
-    /* height: 100px; */
-    /* place-items: center; */
+
 }
 
 .mainContainer .imageSection img{
-    width: auto;
-    height: 450px;
+    width: 300px;
+    height: 500px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* TEXT SECTION */
+
+.mainContainer .textSection{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 10px;
+    align-items: first baseline;
+    height: 500px;
+    /* margin-left: 15px; */
+    width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+.mainContainer .textSection .productHeading{
+    font-family: 'Montserrat';
+    /* font-weight: 300; */
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+.mainContainer .textSection .productHeading2{
+font-size: 1.5rem;
+word-break: break-all;
+color: hsl(212, 21%, 14%) ;
+line-height:30px;
+font-family: 'Fraunces';
+font-weight: 700;
+
+}
+
+
+.mainContainer .textSection .productDesc{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 1px;
+    /* word-wrap: brea  k-word; */
+    line-height: 20px;
+    padding-right: 10px;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+}
+
+.prices .discountedPrice p{
+    font-size: 30px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.prices .fullPrice{
+    margin: 25px 0 0 15px;
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+
+.addtocartBtn button{
+    background-color: hsl(158, 36%, 37%);
+    color:  hsl(0, 0%, 100%);
+    padding:15px 65px ;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    border-radius: 10px;
+    border: none;
+    margin-left: 5px;
 }
